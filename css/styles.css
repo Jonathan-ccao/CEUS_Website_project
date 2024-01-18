@@ -12,10 +12,11 @@ li {
   margin: 0;
   padding: 0;
 }
-
+/* #1B397E CEUS BLUE/*
 /* Global styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins';
+  font-size: 16px;
   line-height: 1.6;
   color: #333;
 }
@@ -28,28 +29,41 @@ body {
 
 /* Header styles */
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
 }
+
 
 /* Navigation styles */
-nav {
-  background-color: #444;
-  color: #fff;
-  padding: 5px;
-  text-align: center;
+.navbar {
+  padding-top: 2rem;
+  display:flex;
+  background-color: white;
+  justify-content: space-between;
+  text-align: right;
+  padding-bottom: 1em;
+  padding-right: 7%;
+  min-width: auto;
+  max-height: 40px;
 }
 
-nav a {
-  color: #fff;
+.navbar a {
+  justify-content: space-between;
+  color: black;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 10px;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  text-align: center;
+  font-weight: 800;
+  font-size: 18px;
 }
 
-nav a:hover {
-  background-color: #555;
+.navbar a:hover {
+  justify-content: space-between;
+  color:rgba(27, 57, 126,100)
 }
 
 /* Footer styles */
@@ -58,7 +72,328 @@ footer {
   color: #fff;
   padding: 10px;
   text-align: center;
+  flex-direction: column;
+  display:flex;
+
 }
 
 /* Add your custom styles below this line */
 
+.logo{
+  background-color: white;
+  text-align: left;
+  min-width: auto;
+  width: 10px;
+  padding-left: 4%;
+  padding-top:10px;
+}
+
+#logoimg{
+  width: 100px;
+  height: auto;
+}
+
+.GroupPhoto {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+  min-height:100px;
+}
+
+.GroupImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.ImgOverlay {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.ImgOverlay::before {
+  content: '';
+  display: block;
+  position: absolute;
+  padding-top: 100%;
+  z-index: -1;
+}
+
+
+.title-overlay {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 50%;
+  left: 10%;
+  font-family: Helvetica;
+  transform: translate(0%, -40%);
+  text-align: left;
+}
+
+.UNSWCEUS{
+  font-size: 63px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.5;
+}
+
+.FULLNAME{
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  line-height: 1.5;
+}
+
+.FooterContainer{
+  background-color: #1B397E;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.FooterCopyright{
+  padding-left: 10%;
+  color: rgba(255, 255, 255,0.5);
+  text-align: left;
+}
+
+.SocialLinkFoot img{
+  height: 30px;
+  margin-right:50px;
+}
+
+.SocialLinkFoot a{
+  text-decoration: none;
+}
+
+.SocialLinkFoot {
+  padding-right: 40%;
+}
+
+
+.PublicationHeader {
+  background-color: rgba(255, 255, 255, 0.226);
+  padding: 50px;
+  position:relative;
+  font-family: 'Poppins';
+  margin:auto;
+  width:50%;
+}
+
+.publicationTitle h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 900;
+}
+
+/* .publicationTitle{
+  
+} */
+
+.publicationBlurb{
+ font-size: 16px;
+ text-align: left;
+ padding-bottom: 20px;
+}
+
+
+/* .StudentHandbookContain {
+}
+
+.CareerHandbookContain{
+} */
+
+.StuHandTit {
+  padding:30px;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.CarHandTit {
+  padding:30px;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.stuhand {
+  padding:30px;
+}
+
+.carhand {
+  padding:30px;
+}
+
+.BigDocContainer {
+  width:fit-content;
+  margin:auto;
+  position:relative;
+  padding:0% 15%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(233, 232, 232, 0.4);
+}
+
+@media (max-width: 600px) {
+  section {
+      flex: 100%; 
+  }
+  .FooterContainer{
+    flex:100;
+  }
+}
+
+.DisclaimerBlurb {
+  padding-left: 30px;
+  margin:auto;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+.DisclaimerTitle{
+  padding-top:30px;
+  padding-left:30px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.Disclaimer {
+  width: 80%;
+  margin:auto;
+}
+
+
+.download-button {
+  margin-left:30px;
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #207bbf;
+}
+.download-button a {
+ text-decoration: none;
+ color: white;
+}
+
+/* <section class="intro">
+        <div class="introdiv">
+            <h3 class="h3intro">
+                Welcome to CEUS
+            </h3>
+            <p class="pintro"> */
+
+.intro{
+  width:auto;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 50px;
+  display: flex;
+}
+
+.introdiv{
+  background-color:rgb(54, 151, 193);
+  max-width: 800px;
+  padding: 40px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.h3intro{
+  color: #f8f8f8;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.pintro{
+  color: rgb(223, 223, 223);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+#introimg1{
+  min-width: 500px;
+  margin-left: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.introimg{
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#introimg2{
+  min-width: 500px;
+  margin-left: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.introimg2{
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.intro2{
+  width:auto;
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  margin-top: -70px;
+  display: flex;
+}
+
+.introdiv2{
+  background-color:rgb(54, 151, 193);
+  max-width: 800px;
+  padding: 40px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.videocontainer{
+  position:relative;
+  height:600px;
+  background-color: rgba(0, 0, 0, 0.172);
+  padding:50px;
+  
+}
+.iframeyt{
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:60%;
+  height:80%;
+  min-height:50%;
+  min-width: 50%;
+}
